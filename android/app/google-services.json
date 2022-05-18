@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "8491597158",
+    "project_id": "animale-5dfba",
+    "storage_bucket": "animale-5dfba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8491597158:android:264c7f16482aa560d71ca7",
+        "android_client_info": {
+          "package_name": "com.example.souq_animale"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8491597158-qpb7791ta8v5lfmu96f3u0a358k4pgos.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.souq_animale",
+            "certificate_hash": "0d721bafd6e143ee71821b48d62f48e4e6bc6950"
+          }
+        },
+        {
+          "client_id": "8491597158-je84avk4ke5qfnj9mv5jr3jn24ob3hot.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnwb6mLWP077mIhmERdy9xMzKQt-G8dPU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "8491597158-je84avk4ke5qfnj9mv5jr3jn24ob3hot.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
