@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:souq_animale/static_variable.dart';
-
 import '../../backup/json/animale_json.dart';
+
 
 class AnimaleData extends StatefulWidget {
   const AnimaleData({Key? key}) : super(key: key);
@@ -35,7 +35,6 @@ class _AnimaleDataState extends State<AnimaleData> {
             //image of animale in first widget
             leading: CircleAvatar(
                 radius: 28,
-
                 backgroundImage: AssetImage(item['image'])),
 
             //add title and date
@@ -60,19 +59,21 @@ class _AnimaleDataState extends State<AnimaleData> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
 
-                    Text(item['name'],style:const TextStyle(fontSize: 15,
-                        fontFamily: 'ubuntu'),),
+                    Flexible(
+                      child: Text(item['name'],style:const TextStyle(fontSize: 15,
+                          fontFamily: 'ubuntu'),),
+                    ),
                     imageStore(),
                   ],),
                 subtitle: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const SizedBox(height: 4,),
-                    Text("Region: " + item['city']),
+                   Flexible(child: Text("Region: " + item['city'])),
                     const SizedBox(height: 4,),
-                    Text("Prix  : " + item['prix'].toString() + " Dh"),
+                   Flexible(child:  Text("Prix  : " + item['prix'].toString() + " Dh")),
                     const SizedBox(height: 10,),
-                    Text(item['description']),
+                   Flexible(child: Text(item['description'])),
                     SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       //this region is for images

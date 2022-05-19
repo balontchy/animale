@@ -40,16 +40,16 @@ class _ProductDataState extends State<ProductData> {
                 //add title and date
                 title: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text(item['name'], style: const TextStyle(fontSize: 15,
-                        fontFamily: 'ubuntu')),
-                    const Text(
+                  children:  [
+                    Flexible(child: Text(item['name'], style: const TextStyle(fontSize: 15,
+                        fontFamily: 'ubuntu'))),
+                    const Flexible(child:Text(
                         '2022/05/01', style: TextStyle(fontFamily: 'ubuntu',
                         fontSize: 11,
                         fontWeight: FontWeight.normal,
                         color: Colors.grey
 
-                    ))
+                    )))
                   ],),
                 subtitle: Text(item['city'], style: const TextStyle(fontSize: 11
                     , fontFamily: 'ubuntu'),),
@@ -62,19 +62,21 @@ class _ProductDataState extends State<ProductData> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
 
-                        Text(item['name'], style: const TextStyle(fontSize: 15,
-                            fontFamily: 'ubuntu'),),
+                        Flexible(
+                          child: Text(item['name'], style: const TextStyle(fontSize: 15,
+                              fontFamily: 'ubuntu'),),
+                        ),
                         imageStore(),
                       ],),
                     subtitle: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const SizedBox(height: 4,),
-                        Text("Region: " + item['city']),
+                        Flexible(child: Text("Region: " + item['city'])),
                         const SizedBox(height: 4,),
-                        Text("Prix  : " + item['prix'].toString() + " Dh"),
+                        Flexible(child: Text("Prix  : ${item['prix']} Dh")),
                         const SizedBox(height: 10,),
-                        Text(item['description']),
+                        Flexible(child: Text(item['description'])),
                         SingleChildScrollView(
                           scrollDirection: Axis.horizontal,
                           //this region is for images

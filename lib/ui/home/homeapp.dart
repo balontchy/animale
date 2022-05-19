@@ -19,6 +19,7 @@ class _HomeAppState extends State<HomeApp> {
 
     return
        DefaultTabController(
+
         length: 3,
         child: Scaffold(
           drawer:const SideBar(),
@@ -41,6 +42,8 @@ class _HomeAppState extends State<HomeApp> {
                 )
               ],
             ),
+
+
             title:  Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: const [
@@ -52,6 +55,8 @@ class _HomeAppState extends State<HomeApp> {
                         fontFamily: "Water_Brush",
                         color: Colors.black
                     )),
+
+
                 InkWell(
                   child: Icon(
                     Icons.add,
@@ -60,8 +65,9 @@ class _HomeAppState extends State<HomeApp> {
                   ),
                 ),
               ],),
-
           ),
+
+
           body: Container(
             width: StaticVariable.mainWidth,
             height: StaticVariable.mainHeight,
@@ -76,15 +82,12 @@ class _HomeAppState extends State<HomeApp> {
                     child:  Product()
                 ),
                 Center(
-                  child: Text('favorite tap !'),
+                  child: Text('favorite tap!'),
                 )
-
               ],
             ),
           ),
         ),
       );
-      // home: const HomeScreen()
-
   }
 }
